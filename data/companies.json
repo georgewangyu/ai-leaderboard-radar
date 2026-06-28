@@ -1,0 +1,1889 @@
+[
+  {
+    "id": "medvi",
+    "rank": 1,
+    "company": "Medvi",
+    "description": "AI Native Telemedicine",
+    "location": "Los Angeles",
+    "annualRevenue": {
+      "display": "$1,800,000,000",
+      "value": 1800000000
+    },
+    "employees": 1,
+    "revenuePerEmployee": {
+      "display": "$1,800,000,000",
+      "value": 1800000000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$0",
+      "value": 0
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2024,
+    "lastUpdated": "Apr 2026",
+    "source": "https://www.nytimes.com/2026/04/02/technology/ai-billion-dollar-company-medvi.html",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://home.medvi.org/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "telegram",
+    "rank": 2,
+    "company": "Telegram",
+    "description": "Messaging",
+    "location": "Dubai",
+    "annualRevenue": {
+      "display": "$1,000,000,000",
+      "value": 1000000000
+    },
+    "employees": 30,
+    "revenuePerEmployee": {
+      "display": "$33,333,333",
+      "value": 33333333
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$3,200,000,000",
+      "value": 3200000000
+    },
+    "valuation": {
+      "display": "$30,000,000,000",
+      "value": 30000000000
+    },
+    "valuationPerEmployee": {
+      "display": "$1,000,000,000",
+      "value": 1000000000
+    },
+    "founded": 2013,
+    "lastUpdated": "Dec 2024",
+    "source": "https://x.com/durov/status/1871163311711993895",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://telegram.org/",
+    "qualification": "exception"
+  },
+  {
+    "id": "midjourney",
+    "rank": 3,
+    "company": "Midjourney",
+    "description": "Image Generation",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$500,000,000",
+      "value": 500000000
+    },
+    "employees": 40,
+    "revenuePerEmployee": {
+      "display": "$12,500,000",
+      "value": 12500000
+    },
+    "profitable": "Yes",
+    "monthsToArr": 24,
+    "totalFunding": {
+      "display": "$0",
+      "value": 0
+    },
+    "valuation": {
+      "display": "$10,000,000,000",
+      "value": 10000000000
+    },
+    "valuationPerEmployee": {
+      "display": "$250,000,000",
+      "value": 250000000
+    },
+    "founded": 2022,
+    "lastUpdated": "Feb 2025",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7296176430453854208?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7296176430453854208%2C7296232942484238336%29&replyUrn=urn%3Ali%3Acomment%3A%28activity%3A7296176430453854208%2C7296290907979489280%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287296232942484238336%2Curn%3Ali%3Aactivity%3A7296176430453854208%29&dashReplyUrn=urn%3Ali%3Afsd_comment%3A%287296290907979489280%2Curn%3Ali%3Aactivity%3A7296176430453854208%29",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.midjourney.com/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "surgeai",
+    "rank": 4,
+    "company": "SurgeAI",
+    "description": "AI Training Data",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$1,000,000,000",
+      "value": 1000000000
+    },
+    "employees": 110,
+    "revenuePerEmployee": {
+      "display": "$9,090,909",
+      "value": 9090909
+    },
+    "profitable": "Yes",
+    "monthsToArr": 60,
+    "totalFunding": {
+      "display": "$0",
+      "value": 0
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2020,
+    "lastUpdated": "Jul 2025",
+    "source": "https://www.theinformation.com/articles/little-known-startup-surged-past-scale-ai-without-investors",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://surgehq.ai/",
+    "qualification": "exception"
+  },
+  {
+    "id": "polsia",
+    "rank": 5,
+    "company": "Polsia",
+    "description": "AI Operator",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$6,300,000",
+      "value": 6300000
+    },
+    "employees": 1,
+    "revenuePerEmployee": {
+      "display": "$6,300,000",
+      "value": 6300000
+    },
+    "profitable": "Unknown",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "$0",
+      "value": 0
+    },
+    "founded": null,
+    "lastUpdated": "",
+    "source": "",
+    "sourceLabel": "Needs source",
+    "sourceType": "unknown",
+    "website": "https://polsia.com/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "anysphere-cursor",
+    "rank": 6,
+    "company": "Anysphere (Cursor)",
+    "description": "AI Code Editor",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$100,000,000",
+      "value": 100000000
+    },
+    "employees": 20,
+    "revenuePerEmployee": {
+      "display": "$5,000,000",
+      "value": 5000000
+    },
+    "profitable": "Unknown",
+    "monthsToArr": 21,
+    "totalFunding": {
+      "display": "$173,400,000",
+      "value": 173400000
+    },
+    "valuation": {
+      "display": "$2,600,000,000",
+      "value": 2600000000
+    },
+    "valuationPerEmployee": {
+      "display": "$130,000,000",
+      "value": 130000000
+    },
+    "founded": 2022,
+    "lastUpdated": "Feb 2025",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7296176430453854208/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.cursor.com/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "hirecade",
+    "rank": 7,
+    "company": "HireCade",
+    "description": "AI Training Data",
+    "location": "London",
+    "annualRevenue": {
+      "display": "$22,000,000",
+      "value": 22000000
+    },
+    "employees": 5,
+    "revenuePerEmployee": {
+      "display": "$4,400,000",
+      "value": 4400000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$0",
+      "value": 0
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2024,
+    "lastUpdated": "Apr 2026",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://www.hirecade.com/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "openart",
+    "rank": 8,
+    "company": "OpenArt",
+    "description": "AI for Image and Video",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$70,000,000",
+      "value": 70000000
+    },
+    "employees": 20,
+    "revenuePerEmployee": {
+      "display": "$3,500,000",
+      "value": 3500000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$35,000,000",
+      "value": 35000000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2022,
+    "lastUpdated": "Jan 2026",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7423050918448766977",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://openart.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "base44",
+    "rank": 9,
+    "company": "Base44",
+    "description": "AI Code Gen",
+    "location": "Tel Aviv",
+    "annualRevenue": {
+      "display": "$3,500,000",
+      "value": 3500000
+    },
+    "employees": 1,
+    "revenuePerEmployee": {
+      "display": "$3,500,000",
+      "value": 3500000
+    },
+    "profitable": "Yes",
+    "monthsToArr": 6,
+    "totalFunding": {
+      "display": "$0",
+      "value": 0
+    },
+    "valuation": {
+      "display": "$80,000,000",
+      "value": 80000000
+    },
+    "valuationPerEmployee": {
+      "display": "$80,000,000",
+      "value": 80000000
+    },
+    "founded": 2025,
+    "lastUpdated": "May 2025",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7336025796509077504/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://base44.com/",
+    "qualification": "exception"
+  },
+  {
+    "id": "micro1",
+    "rank": 10,
+    "company": "micro1",
+    "description": "AI Training Data",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$250,000,000",
+      "value": 250000000
+    },
+    "employees": 80,
+    "revenuePerEmployee": {
+      "display": "$3,125,000",
+      "value": 3125000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$41,600,000",
+      "value": 41600000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2022,
+    "lastUpdated": "Mar 2026",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://www.micro1.ai/",
+    "qualification": "exception"
+  },
+  {
+    "id": "cal-ai",
+    "rank": 11,
+    "company": "Cal AI",
+    "description": "AI Calorie Tracker",
+    "location": "New York",
+    "annualRevenue": {
+      "display": "$12,000,000",
+      "value": 12000000
+    },
+    "employees": 4,
+    "revenuePerEmployee": {
+      "display": "$3,000,000",
+      "value": 3000000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$0",
+      "value": 0
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2024,
+    "lastUpdated": "Nov 2024",
+    "source": "https://www.forbes.com/sites/josipamajic/2024/11/02/meet-the-17-year-old-ceo-behind-a-12m-ai-powered-nutrition-app/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.calai.app/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "turbopuffer",
+    "rank": 12,
+    "company": "Turbopuffer",
+    "description": "Vector and Full Text Search",
+    "location": "Ottawa",
+    "annualRevenue": {
+      "display": "$100,000,000",
+      "value": 100000000
+    },
+    "employees": 34,
+    "revenuePerEmployee": {
+      "display": "$2,941,176",
+      "value": 2941176
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$1,000,000",
+      "value": 1000000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2023,
+    "lastUpdated": "May 2026",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7463238765277503488/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://turbopuffer.com/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "mercor",
+    "rank": 13,
+    "company": "Mercor",
+    "description": "Talent Marketplace + Data Labeling",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$75,000,000",
+      "value": 75000000
+    },
+    "employees": 30,
+    "revenuePerEmployee": {
+      "display": "$2,500,000",
+      "value": 2500000
+    },
+    "profitable": "Unknown",
+    "monthsToArr": 24,
+    "totalFunding": {
+      "display": "$135,600,000",
+      "value": 135600000
+    },
+    "valuation": {
+      "display": "$2,000,000,000",
+      "value": 2000000000
+    },
+    "valuationPerEmployee": {
+      "display": "$66,666,667",
+      "value": 66666667
+    },
+    "founded": 2023,
+    "lastUpdated": "Feb 2025",
+    "source": "https://techcrunch.com/2025/02/20/mercor-an-ai-recruiting-startup-founded-by-21-year-olds-raises-100m-at-2b-valuation/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://mercor.com/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "chai-research",
+    "rank": 14,
+    "company": "Chai Research",
+    "description": "Social AI Platform",
+    "location": "Palo Alto",
+    "annualRevenue": {
+      "display": "$30,000,000",
+      "value": 30000000
+    },
+    "employees": 12,
+    "revenuePerEmployee": {
+      "display": "$2,500,000",
+      "value": 2500000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$10,000,000",
+      "value": 10000000
+    },
+    "valuation": {
+      "display": "$450,000,000",
+      "value": 450000000
+    },
+    "valuationPerEmployee": {
+      "display": "$37,500,000",
+      "value": 37500000
+    },
+    "founded": 2021,
+    "lastUpdated": "Apr 2025",
+    "source": "https://www.prnewswire.com/news-releases/chai-reaches-over-30m-in-arr--with-only-12-employees-302414198.html",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.chai-research.com/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "fal-ai",
+    "rank": 15,
+    "company": "Fal.ai",
+    "description": "Generative media platform",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$95,000,000",
+      "value": 95000000
+    },
+    "employees": 40,
+    "revenuePerEmployee": {
+      "display": "$2,375,000",
+      "value": 2375000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$197,000,000",
+      "value": 197000000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2021,
+    "lastUpdated": "Feb 2025",
+    "source": "https://x.com/FAL/status/1950935512493236327",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://fal.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "eleven-labs",
+    "rank": 16,
+    "company": "Eleven Labs",
+    "description": "AI Voice, Text-to-Speech",
+    "location": "New York",
+    "annualRevenue": {
+      "display": "$100,000,000",
+      "value": 100000000
+    },
+    "employees": 50,
+    "revenuePerEmployee": {
+      "display": "$2,000,000",
+      "value": 2000000
+    },
+    "profitable": "Unknown",
+    "monthsToArr": 24,
+    "totalFunding": {
+      "display": "$208,000,000",
+      "value": 208000000
+    },
+    "valuation": {
+      "display": "$3,300,000,000",
+      "value": 3300000000
+    },
+    "valuationPerEmployee": {
+      "display": "$66,000,000",
+      "value": 66000000
+    },
+    "founded": 2022,
+    "lastUpdated": "Feb 2025",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7296176430453854208/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://elevenlabs.io/",
+    "qualification": "exception"
+  },
+  {
+    "id": "stackblitz-bolt-new",
+    "rank": 17,
+    "company": "Stackblitz (Bolt.new)",
+    "description": "AI Code Editor",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$40,000,000",
+      "value": 40000000
+    },
+    "employees": 20,
+    "revenuePerEmployee": {
+      "display": "$2,000,000",
+      "value": 2000000
+    },
+    "profitable": "Unknown",
+    "monthsToArr": 2,
+    "totalFunding": {
+      "display": "$87,900,000",
+      "value": 87900000
+    },
+    "valuation": {
+      "display": "$700,000,000",
+      "value": 700000000
+    },
+    "valuationPerEmployee": {
+      "display": "$35,000,000",
+      "value": 35000000
+    },
+    "founded": 2017,
+    "lastUpdated": "Mar 2025",
+    "source": "https://www.linkedin.com/posts/lennyrachitsky_boltnew-is-the-second-fastest-growing-product-activity-7305992512479862785-fmHh/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://bolt.new/",
+    "qualification": "exception"
+  },
+  {
+    "id": "gamma",
+    "rank": 18,
+    "company": "Gamma",
+    "description": "AI for Presentations",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$100,000,000",
+      "value": 100000000
+    },
+    "employees": 52,
+    "revenuePerEmployee": {
+      "display": "$1,923,077",
+      "value": 1923077
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$19,000,000",
+      "value": 19000000
+    },
+    "valuation": {
+      "display": "$2,100,000,000",
+      "value": 2100000000
+    },
+    "valuationPerEmployee": {
+      "display": "$40,384,615",
+      "value": 40384615
+    },
+    "founded": 2020,
+    "lastUpdated": "Nov 2025",
+    "source": "https://www.nytimes.com/2025/11/10/business/dealbook/gamma-ai-fundraise.html",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://gamma.app/",
+    "qualification": "exception"
+  },
+  {
+    "id": "lovable",
+    "rank": 19,
+    "company": "Lovable",
+    "description": "AI Code Gen",
+    "location": "Stockholm",
+    "annualRevenue": {
+      "display": "$75,000,000",
+      "value": 75000000
+    },
+    "employees": 40,
+    "revenuePerEmployee": {
+      "display": "$1,875,000",
+      "value": 1875000
+    },
+    "profitable": "Unknown",
+    "monthsToArr": 7,
+    "totalFunding": {
+      "display": "$222,500,000",
+      "value": 222500000
+    },
+    "valuation": {
+      "display": "$1,800,000,000",
+      "value": 1800000000
+    },
+    "valuationPerEmployee": {
+      "display": "$45,000,000",
+      "value": 45000000
+    },
+    "founded": 2023,
+    "lastUpdated": "Apr 2025",
+    "source": "https://techcrunch.com/2025/07/17/lovable-becomes-a-unicorn-with-200m-series-a-just-8-months-after-launch/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://lovable.dev/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "retell-ai",
+    "rank": 20,
+    "company": "Retell AI",
+    "description": "AI Voice",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$36,000,000",
+      "value": 36000000
+    },
+    "employees": 21,
+    "revenuePerEmployee": {
+      "display": "$1,714,286",
+      "value": 1714286
+    },
+    "profitable": "Yes",
+    "monthsToArr": 12,
+    "totalFunding": {
+      "display": "$4,725,000",
+      "value": 4725000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2023,
+    "lastUpdated": "Nov 2025",
+    "source": "https://openai.com/index/retell-ai/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.retellai.com/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "genspark",
+    "rank": 21,
+    "company": "Genspark",
+    "description": "AI Super Agent",
+    "location": "Palo Alto",
+    "annualRevenue": {
+      "display": "$50,000,000",
+      "value": 50000000
+    },
+    "employees": 30,
+    "revenuePerEmployee": {
+      "display": "$1,666,667",
+      "value": 1666667
+    },
+    "profitable": "Unknown",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$160,000,000",
+      "value": 160000000
+    },
+    "valuation": {
+      "display": "$530,000,000",
+      "value": 530000000
+    },
+    "valuationPerEmployee": {
+      "display": "$17,666,667",
+      "value": 17666667
+    },
+    "founded": 2023,
+    "lastUpdated": "Oct 2025",
+    "source": "https://www.linkedin.com/posts/activity-7378620977989160961-TrWM",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.genspark.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "markable-ai",
+    "rank": 22,
+    "company": "Markable AI",
+    "description": "AI Creator Marketing",
+    "location": "Seattle",
+    "annualRevenue": {
+      "display": "$40,000,000",
+      "value": 40000000
+    },
+    "employees": 25,
+    "revenuePerEmployee": {
+      "display": "$1,600,000",
+      "value": 1600000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$17,000,000",
+      "value": 17000000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2023,
+    "lastUpdated": "Mar 2025",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://markable.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "aragon-ai",
+    "rank": 23,
+    "company": "Aragon AI",
+    "description": "AI Avatar Generation",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$12,000,000",
+      "value": 12000000
+    },
+    "employees": 8,
+    "revenuePerEmployee": {
+      "display": "$1,500,000",
+      "value": 1500000
+    },
+    "profitable": "Yes",
+    "monthsToArr": 24,
+    "totalFunding": {
+      "display": "$900,000",
+      "value": 900000
+    },
+    "valuation": {
+      "display": "$10,000,000",
+      "value": 10000000
+    },
+    "valuationPerEmployee": {
+      "display": "$1,250,000",
+      "value": 1250000
+    },
+    "founded": 2022,
+    "lastUpdated": "Feb 2025",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7296176430453854208/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.aragon.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "solvely-ai",
+    "rank": 24,
+    "company": "Solvely.ai",
+    "description": "AI for Homework",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$6,000,000",
+      "value": 6000000
+    },
+    "employees": 4,
+    "revenuePerEmployee": {
+      "display": "$1,500,000",
+      "value": 1500000
+    },
+    "profitable": "Unknown",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2023,
+    "lastUpdated": "Feb 2025",
+    "source": "https://x.com/ArfurRock/status/1866981946414272910",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://solvely.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "oleve",
+    "rank": 25,
+    "company": "Oleve",
+    "description": "AI Consumer Portolio",
+    "location": "New York",
+    "annualRevenue": {
+      "display": "$6,000,000",
+      "value": 6000000
+    },
+    "employees": 4,
+    "revenuePerEmployee": {
+      "display": "$1,500,000",
+      "value": 1500000
+    },
+    "profitable": "Yes",
+    "monthsToArr": 9,
+    "totalFunding": {
+      "display": "$600,000",
+      "value": 600000
+    },
+    "valuation": {
+      "display": "$10,000,000",
+      "value": 10000000
+    },
+    "valuationPerEmployee": {
+      "display": "$2,500,000",
+      "value": 2500000
+    },
+    "founded": 2024,
+    "lastUpdated": "Feb 2025",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7295539504382128129/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.oleve.co/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "arcads",
+    "rank": 26,
+    "company": "Arcads",
+    "description": "AI Video Ads Generator",
+    "location": "Paris",
+    "annualRevenue": {
+      "display": "$7,000,000",
+      "value": 7000000
+    },
+    "employees": 5,
+    "revenuePerEmployee": {
+      "display": "$1,400,000",
+      "value": 1400000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$0",
+      "value": 0
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2024,
+    "lastUpdated": "Jun 2025",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://www.arcads.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "higgsfield",
+    "rank": 27,
+    "company": "Higgsfield",
+    "description": "AI Video Generation",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$50,000,000",
+      "value": 50000000
+    },
+    "employees": 40,
+    "revenuePerEmployee": {
+      "display": "$1,250,000",
+      "value": 1250000
+    },
+    "profitable": "Yes",
+    "monthsToArr": 2,
+    "totalFunding": {
+      "display": "$58,000,000",
+      "value": 58000000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2022,
+    "lastUpdated": "Jun 2025",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://higgsfield.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "develop-health",
+    "rank": 28,
+    "company": "Develop Health",
+    "description": "AI for Prescribers",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$6,000,000",
+      "value": 6000000
+    },
+    "employees": 5,
+    "revenuePerEmployee": {
+      "display": "$1,200,000",
+      "value": 1200000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$3,200,000",
+      "value": 3200000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2022,
+    "lastUpdated": "Mar 2025",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://develop.health/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "boldvoice",
+    "rank": 29,
+    "company": "BoldVoice",
+    "description": "AI Communication Feedback",
+    "location": "New York",
+    "annualRevenue": {
+      "display": "$8,500,000",
+      "value": 8500000
+    },
+    "employees": 8,
+    "revenuePerEmployee": {
+      "display": "$1,062,500",
+      "value": 1062500
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$5,000,000",
+      "value": 5000000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2021,
+    "lastUpdated": "Apr 2025",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://www.boldvoice.com/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "super-com",
+    "rank": 30,
+    "company": "Super.com",
+    "description": "All-in-one App",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$220,000,000",
+      "value": 220000000
+    },
+    "employees": 220,
+    "revenuePerEmployee": {
+      "display": "$1,000,000",
+      "value": 1000000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$150,000,000",
+      "value": 150000000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2016,
+    "lastUpdated": "Jul 2025",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://www.super.com/",
+    "qualification": "exception"
+  },
+  {
+    "id": "photoroom",
+    "rank": 31,
+    "company": "Photoroom",
+    "description": "Image Editing",
+    "location": "Paris",
+    "annualRevenue": {
+      "display": "$50,000,000",
+      "value": 50000000
+    },
+    "employees": 50,
+    "revenuePerEmployee": {
+      "display": "$1,000,000",
+      "value": 1000000
+    },
+    "profitable": "Yes",
+    "monthsToArr": 48,
+    "totalFunding": {
+      "display": "$62,000,000",
+      "value": 62000000
+    },
+    "valuation": {
+      "display": "$500,000,000",
+      "value": 500000000
+    },
+    "valuationPerEmployee": {
+      "display": "$10,000,000",
+      "value": 10000000
+    },
+    "founded": 2019,
+    "lastUpdated": "Sep 2024",
+    "source": "https://www.todayin-ai.com/p/photoroom",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.photoroom.com/",
+    "qualification": "exception"
+  },
+  {
+    "id": "stan",
+    "rank": 32,
+    "company": "Stan",
+    "description": "Creator Storefront",
+    "location": "LA/Toronto",
+    "annualRevenue": {
+      "display": "$30,000,000",
+      "value": 30000000
+    },
+    "employees": 30,
+    "revenuePerEmployee": {
+      "display": "$1,000,000",
+      "value": 1000000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2020,
+    "lastUpdated": "Jul 2024",
+    "source": "https://www.forerunnerventures.com/perspectives/how-stan-scaled-to-33m-in-arr-within-two-years-while-building-in-public",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://stan.store/",
+    "qualification": "exception"
+  },
+  {
+    "id": "fish-audio",
+    "rank": 33,
+    "company": "Fish Audio",
+    "description": "AI Voice, Text-to-Speech",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$5,000,000",
+      "value": 5000000
+    },
+    "employees": 5,
+    "revenuePerEmployee": {
+      "display": "$1,000,000",
+      "value": 1000000
+    },
+    "profitable": "Unknown",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$5,000,000",
+      "value": 5000000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2024,
+    "lastUpdated": "Jun 2025",
+    "source": "https://www.businesswire.com/news/home/20250603787428/en/Hanabi-AI-Launches-OpenAudio-S1-The-Worlds-First-AI-Voice-Actor-for-Real-Time-Emotional-Control",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://fish.audio/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "akool",
+    "rank": 34,
+    "company": "AKOOL",
+    "description": "AI Video Generation",
+    "location": "Santa Clara",
+    "annualRevenue": {
+      "display": "$40,000,000",
+      "value": 40000000
+    },
+    "employees": 50,
+    "revenuePerEmployee": {
+      "display": "$800,000",
+      "value": 800000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2022,
+    "lastUpdated": "Nov 2024",
+    "source": "https://www.businesswire.com/news/home/20241112319659/en/AKOOL-Achieves-40M-in-Invoiced-ARR-Accelerating-Growth-in-AI-Driven-Content-Creation-for-Diverse-Industries",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://akool.com/",
+    "qualification": "watchlist"
+  },
+  {
+    "id": "gptzero",
+    "rank": 35,
+    "company": "GPTZero",
+    "description": "AI Detector",
+    "location": "New York",
+    "annualRevenue": {
+      "display": "$24,000,000",
+      "value": 24000000
+    },
+    "employees": 35,
+    "revenuePerEmployee": {
+      "display": "$685,714",
+      "value": 685714
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$13,500,000",
+      "value": 13500000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2023,
+    "lastUpdated": "May 2025",
+    "source": "https://www.linkedin.com/posts/ed-tian_gptzero-just-crossed-24m-arr-here-are-activity-7414696978401390593-rtDv",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://gptzero.me/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "praktika-ai",
+    "rank": 36,
+    "company": "Praktika.ai",
+    "description": "AI Avatars for Learning",
+    "location": "Remote",
+    "annualRevenue": {
+      "display": "$20,000,000",
+      "value": 20000000
+    },
+    "employees": 30,
+    "revenuePerEmployee": {
+      "display": "$666,667",
+      "value": 666667
+    },
+    "profitable": "Unknown",
+    "monthsToArr": 12,
+    "totalFunding": {
+      "display": "$36,500,000",
+      "value": 36500000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2021,
+    "lastUpdated": "May 2024",
+    "source": "https://techcrunch.com/2024/05/22/praktika-raises-35-5m-to-use-ai-avatars-to-make-learning-languages-feel-more-natural/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://praktika.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "creati",
+    "rank": 37,
+    "company": "Creati",
+    "description": "AI Image Generation",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$13,000,000",
+      "value": 13000000
+    },
+    "employees": 22,
+    "revenuePerEmployee": {
+      "display": "$590,909",
+      "value": 590909
+    },
+    "profitable": "Unknown",
+    "monthsToArr": 12,
+    "totalFunding": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2021,
+    "lastUpdated": "Jul 2025",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://www.creati.studio/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "latitude",
+    "rank": 38,
+    "company": "Latitude",
+    "description": "AI Games",
+    "location": "Utah",
+    "annualRevenue": {
+      "display": "$7,000,000",
+      "value": 7000000
+    },
+    "employees": 12,
+    "revenuePerEmployee": {
+      "display": "$583,333",
+      "value": 583333
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$4,000,000",
+      "value": 4000000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2019,
+    "lastUpdated": "Apr 2025",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://latitude.io/",
+    "qualification": "watchlist"
+  },
+  {
+    "id": "submagic",
+    "rank": 39,
+    "company": "SubMagic",
+    "description": "AI Video Shorts",
+    "location": "Paris",
+    "annualRevenue": {
+      "display": "$8,000,000",
+      "value": 8000000
+    },
+    "employees": 14,
+    "revenuePerEmployee": {
+      "display": "$571,429",
+      "value": 571429
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$0",
+      "value": 0
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2023,
+    "lastUpdated": "Mar 2025",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://www.submagic.co/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "jobright",
+    "rank": 40,
+    "company": "Jobright",
+    "description": "AI Job Search",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$5,000,000",
+      "value": 5000000
+    },
+    "employees": 9,
+    "revenuePerEmployee": {
+      "display": "$555,556",
+      "value": 555556
+    },
+    "profitable": "Unknown",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$7,700,000",
+      "value": 7700000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2023,
+    "lastUpdated": "Feb 2025",
+    "source": "https://www.linkedin.com/posts/zhengyudian_founderjourney-buildinginpublic-aistartup-activity-7427094193283678208-3Pl6/",
+    "sourceLabel": "Founder verification",
+    "sourceType": "founder-verification",
+    "website": "https://jobright.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "growthx",
+    "rank": 41,
+    "company": "GrowthX",
+    "description": "AI Powered Growth",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$7,200,000",
+      "value": 7200000
+    },
+    "employees": 13,
+    "revenuePerEmployee": {
+      "display": "$553,846",
+      "value": 553846
+    },
+    "profitable": "Yes",
+    "monthsToArr": 12,
+    "totalFunding": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2024,
+    "lastUpdated": "Apr 2025",
+    "source": "https://www.linkedin.com/posts/marcelsantilli_48-win-rate-22m-pipeline-29-day-sales-activity-7308903016105943040-z0s0/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.growthx.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "chatbase",
+    "rank": 42,
+    "company": "Chatbase",
+    "description": "AI Customer Support",
+    "location": "Remote",
+    "annualRevenue": {
+      "display": "$5,000,000",
+      "value": 5000000
+    },
+    "employees": 11,
+    "revenuePerEmployee": {
+      "display": "$454,545",
+      "value": 454545
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$0",
+      "value": 0
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2023,
+    "lastUpdated": "Mar 2025",
+    "source": "https://www.linkedin.com/posts/yasserelsaid_we-did-it-we-hit-5m-arr-at-chatbase-activity-7302632659757740032-DJCM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXYWv4Bns_3dxxz42nN8y0CSUx9LXy6BgA",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.chatbase.co/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "jenni-ai",
+    "rank": 43,
+    "company": "Jenni.ai",
+    "description": "AI for Writing",
+    "location": "Remote",
+    "annualRevenue": {
+      "display": "$10,000,000",
+      "value": 10000000
+    },
+    "employees": 23,
+    "revenuePerEmployee": {
+      "display": "$434,783",
+      "value": 434783
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$850,000",
+      "value": 850000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2021,
+    "lastUpdated": "Feb 2025",
+    "source": "https://x.com/Davidjpark96/status/1887236667150565459",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://jenni.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "conversion",
+    "rank": 44,
+    "company": "Conversion",
+    "description": "AI Marketing",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$6,500,000",
+      "value": 6500000
+    },
+    "employees": 15,
+    "revenuePerEmployee": {
+      "display": "$433,333",
+      "value": 433333
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2020,
+    "lastUpdated": "Mar 2025",
+    "source": "https://conversion.ai/careers",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://conversion.ai/",
+    "qualification": "watchlist"
+  },
+  {
+    "id": "pump-co",
+    "rank": 45,
+    "company": "Pump.co",
+    "description": "AI Cloud Cost Optimization",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$15,000,000",
+      "value": 15000000
+    },
+    "employees": 35,
+    "revenuePerEmployee": {
+      "display": "$428,571",
+      "value": 428571
+    },
+    "profitable": "Yes",
+    "monthsToArr": 18,
+    "totalFunding": {
+      "display": "$4,500,000",
+      "value": 4500000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2022,
+    "lastUpdated": "Apr 2025",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://www.pump.co/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "fyxerai",
+    "rank": 46,
+    "company": "FyxerAI",
+    "description": "AI Executive Assistant",
+    "location": "London",
+    "annualRevenue": {
+      "display": "$10,000,000",
+      "value": 10000000
+    },
+    "employees": 25,
+    "revenuePerEmployee": {
+      "display": "$400,000",
+      "value": 400000
+    },
+    "profitable": "Unknown",
+    "monthsToArr": 8,
+    "totalFunding": {
+      "display": "$10,000,000",
+      "value": 10000000
+    },
+    "valuation": {
+      "display": "$60,000,000",
+      "value": 60000000
+    },
+    "valuationPerEmployee": {
+      "display": "$2,400,000",
+      "value": 2400000
+    },
+    "founded": 2023,
+    "lastUpdated": "Jun 2025",
+    "source": "https://www.linkedin.com/posts/richard-hollingsworth-444b8589_we-started-fyxer-ai-to-democratise-ai-and-activity-7335647501678501890-SnKw",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.fyxer.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "vapi",
+    "rank": 47,
+    "company": "Vapi",
+    "description": "AI Voice API",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$8,000,000",
+      "value": 8000000
+    },
+    "employees": 20,
+    "revenuePerEmployee": {
+      "display": "$400,000",
+      "value": 400000
+    },
+    "profitable": "Unknown",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$20,125,000",
+      "value": 20125000
+    },
+    "valuation": {
+      "display": "$130,000,000",
+      "value": 130000000
+    },
+    "valuationPerEmployee": {
+      "display": "$6,500,000",
+      "value": 6500000
+    },
+    "founded": 2023,
+    "lastUpdated": "Dec 2024",
+    "source": "https://www.reuters.com/technology/voice-ai-startup-vapi-raises-20-mln-bessemer-y-combinator-backed-round-2024-12-12/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://vapi.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "recall-ai",
+    "rank": 48,
+    "company": "Recall.ai",
+    "description": "API for Video Conferences",
+    "location": "San Francisco",
+    "annualRevenue": {
+      "display": "$10,000,000",
+      "value": 10000000
+    },
+    "employees": 25,
+    "revenuePerEmployee": {
+      "display": "$400,000",
+      "value": 400000
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$12,700,000",
+      "value": 12700000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2022,
+    "lastUpdated": "Feb 2025",
+    "source": "https://www.linkedin.com/posts/zhu-amanda_i-almost-didnt-pivot-that-wouldve-been-activity-7296923736841105408-PgI_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAXYWv4Bns_3dxxz42nN8y0CSUx9LXy6BgA",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.recall.ai/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "haven",
+    "rank": 49,
+    "company": "Haven",
+    "description": "AI Accounting & Finance",
+    "location": "New York",
+    "annualRevenue": {
+      "display": "$5,000,000",
+      "value": 5000000
+    },
+    "employees": 15,
+    "revenuePerEmployee": {
+      "display": "$333,333",
+      "value": 333333
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2023,
+    "lastUpdated": "Apr 2025",
+    "source": "Private Verification with Founder",
+    "sourceLabel": "Private verification",
+    "sourceType": "private-verification",
+    "website": "https://www.usehaven.com/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "icon",
+    "rank": 50,
+    "company": "Icon",
+    "description": "AI Ad Maker",
+    "location": "New York",
+    "annualRevenue": {
+      "display": "$5,000,000",
+      "value": 5000000
+    },
+    "employees": 16,
+    "revenuePerEmployee": {
+      "display": "$312,500",
+      "value": 312500
+    },
+    "profitable": "Yes",
+    "monthsToArr": 1,
+    "totalFunding": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2024,
+    "lastUpdated": "Mar 2025",
+    "source": "https://x.com/kennandavison/status/1899505804677677188",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://icon.me/",
+    "qualification": "qualifies"
+  },
+  {
+    "id": "gumloop",
+    "rank": 9999,
+    "company": "Gumloop",
+    "description": "AI Automation Framework",
+    "location": "Vancouver",
+    "annualRevenue": {
+      "display": "Unknown",
+      "value": null
+    },
+    "employees": 4,
+    "revenuePerEmployee": {
+      "display": "$0",
+      "value": 0
+    },
+    "profitable": "Yes",
+    "monthsToArr": null,
+    "totalFunding": {
+      "display": "$20,125,000",
+      "value": 20125000
+    },
+    "valuation": {
+      "display": "Unknown",
+      "value": null
+    },
+    "valuationPerEmployee": {
+      "display": "Unknown",
+      "value": null
+    },
+    "founded": 2023,
+    "lastUpdated": "Jan 2025",
+    "source": "https://blog.gumloop.com/gumloops-17m-series-a/",
+    "sourceLabel": "Public source",
+    "sourceType": "public",
+    "website": "https://www.gumloop.com/",
+    "qualification": "watchlist"
+  }
+]

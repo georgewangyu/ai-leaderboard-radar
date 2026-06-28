@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Leaderboard Radar"
+  short_description: "Track lean AI-native company leaderboards and digests."
+  default_prompt: "Set up AI Leaderboard Radar and show me the latest company to study."

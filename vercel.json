@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-leaderboard-radar.vercel.app"
+        }
+      ],
+      "destination": "https://aileaderboardradar.snackoverflowgeorge.com",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-leaderboard-radar.vercel.app"
+        }
+      ],
+      "destination": "https://aileaderboardradar.snackoverflowgeorge.com/:path*",
+      "permanent": true
+    }
+  ]
+}
