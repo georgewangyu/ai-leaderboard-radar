@@ -10,7 +10,8 @@ test.describe("AI Leaderboard Radar catalog", () => {
     await expect(page).toHaveTitle("AI Leaderboard Radar");
     await expect(page.getByRole("heading", { name: "AI Leaderboard Radar", level: 1 })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Use it in Codex.", level: 2 })).toBeVisible();
-    await expect(page.getByText("npx skills add georgewangyu/ai-leaderboard-radar")).toBeVisible();
+    await expect(page.getByRole("button", { name: "Unlock install command" })).toBeVisible();
+    await expect(page.getByText("npx skills add georgewangyu/ai-leaderboard-radar")).toBeHidden();
     await expect(page.getByText(`${companies.length} matching companies`)).toBeVisible();
 
     await page.getByPlaceholder("Company, market, source...").fill(medvi.company);
@@ -33,15 +34,33 @@ test.describe("AI Leaderboard Radar catalog", () => {
     expect(sourceLabels.every((label) => label === "Public source")).toBe(true);
   });
 
-  test("setup command copies from the first-screen skill card", async ({ page, context }) => {
+  test("lead unlock reveals and copies the setup command", async ({ page, context }) => {
+    const payloads: Array<Record<string, unknown>> = [];
+
     await context.grantPermissions(["clipboard-read", "clipboard-write"]);
+    await page.route("**/api/leads", async (route) => {
+      payloads.push(JSON.parse(route.request().postData() || "{}") as Record<string, unknown>);
+      await route.fulfill({
+        body: JSON.stringify({ ok: true }),
+        contentType: "application/json",
+        status: 200,
+      });
+    });
     await page.goto("/");
 
+    await page.getByLabel("Name").fill("Example User");
+    await page.getByRole("textbox", { name: "Email", exact: true }).fill("person@example.com");
+    await page.getByRole("button", { name: "Unlock install command" }).click();
+    await expect(page.getByRole("link", { name: "Star the repo" })).toHaveAttribute(
+      "href",
+      "https://github.com/georgewangyu/ai-leaderboard-radar",
+    );
     await page.getByRole("button", { name: "Copy command" }).click();
     await expect(page.getByRole("button", { name: "Copied" })).toBeVisible();
 
     const command = await page.evaluate(() => navigator.clipboard.readText());
     expect(command).toBe("npx skills add georgewangyu/ai-leaderboard-radar --skill ai-leaderboard-radar -g");
+    expect(payloads[0]).toMatchObject({ name: "Example User", email: "person@example.com" });
   });
 
   test("submit form posts a leaderboard update", async ({ page }) => {

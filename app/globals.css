@@ -281,6 +281,30 @@ h2 {
   font-size: 12px;
 }
 
+.setup-command,
+.unlock-form {
+  display: grid;
+  gap: 12px;
+}
+
+.setup-actions {
+  display: grid;
+  gap: 10px;
+}
+
+.setup-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 820;
+}
+
 .panel-head {
   display: flex;
   align-items: flex-end;

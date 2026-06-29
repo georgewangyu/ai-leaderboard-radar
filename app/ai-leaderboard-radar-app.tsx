@@ -14,6 +14,14 @@ type Status = "idle" | "submitting" | "success" | "error";
 const pageSize = 14;
 const skillInstallCommand =
   "npx skills add georgewangyu/ai-leaderboard-radar --skill ai-leaderboard-radar -g";
+const skillRepoUrl = "https://github.com/georgewangyu/ai-leaderboard-radar";
+const leadStorageKey = "ai-leaderboard-radar-install-unlocked";
+
+const leadLabels: Record<string, string> = {
+  email: "Email",
+  name: "Name",
+  website: "Website",
+};
 
 const sortLabels: Record<SortMode, string> = {
   rank: "Source rank",
@@ -76,6 +84,21 @@ async function errorMessageFor(response: Response) {
   return fieldMessages.length ? fieldMessages.join(" ") : body?.error || "Check the form and try again.";
 }
 
+async function leadErrorMessageFor(response: Response) {
+  if (response.status !== 400) {
+    return "Could not unlock the install command. Try again in a moment.";
+  }
+
+  const body = (await response.json().catch(() => null)) as
+    | { error?: string; issues?: Record<string, string[] | undefined> }
+    | null;
+  const fieldMessages = Object.entries(body?.issues || {}).flatMap(([field, messages]) =>
+    (messages || []).map((message) => `${leadLabels[field] || field}: ${message}`),
+  );
+
+  return fieldMessages.length ? fieldMessages.join(" ") : body?.error || "Check your email and try again.";
+}
+
 export function AiLeaderboardRadarApp({ companies }: Props) {
   const [query, setQuery] = useState("");
   const [location, setLocation] = useState("All");
@@ -86,6 +109,9 @@ export function AiLeaderboardRadarApp({ companies }: Props) {
   const [copied, setCopied] = useState(false);
   const [formStatus, setFormStatus] = useState<Status>("idle");
   const [error, setError] = useState("");
+  const [leadStatus, setLeadStatus] = useState<Status>("idle");
+  const [leadUnlocked, setLeadUnlocked] = useState(false);
+  const [leadError, setLeadError] = useState("");
 
   const filteredCompanies = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -129,10 +155,46 @@ export function AiLeaderboardRadarApp({ companies }: Props) {
     setPage(1);
   }, [location, qualification, query, sortMode, sourceType]);
 
+  useEffect(() => {
+    setLeadUnlocked(window.localStorage.getItem(leadStorageKey) === "true");
+  }, []);
+
   async function copyCommand() {
     await navigator.clipboard.writeText(skillInstallCommand);
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1400);
+  }
+
+  async function submitLead(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const payload = Object.fromEntries(formData.entries());
+
+    setLeadStatus("submitting");
+    setLeadError("");
+
+    try {
+      const response = await fetch("/api/leads", {
+        body: JSON.stringify(payload),
+        headers: { "Content-Type": "application/json" },
+        method: "POST",
+      });
+
+      if (!response.ok) {
+        setLeadStatus("error");
+        setLeadError(await leadErrorMessageFor(response));
+        return;
+      }
+
+      window.localStorage.setItem(leadStorageKey, "true");
+      setLeadUnlocked(true);
+      setLeadStatus("success");
+      form.reset();
+    } catch {
+      setLeadStatus("error");
+      setLeadError("Could not unlock the install command. Try again in a moment.");
+    }
   }
 
   async function submitTip(event: FormEvent<HTMLFormElement>) {
@@ -172,8 +234,8 @@ export function AiLeaderboardRadarApp({ companies }: Props) {
           <a href="#sources">Sources</a>
           <a href="#skill">Skill</a>
         </nav>
-        <a className="primary nav-submit" href="#submit">
-          Submit update
+        <a className="primary nav-submit" href="#skill">
+          Unlock skill
         </a>
       </header>
 
@@ -192,10 +254,37 @@ export function AiLeaderboardRadarApp({ companies }: Props) {
           <p>
             Install the skill, then ask for a daily company to study or a weekly leaderboard digest.
           </p>
-          <code>{skillInstallCommand}</code>
-          <button className="primary wide" onClick={copyCommand}>
-            {copied ? "Copied" : "Copy command"}
-          </button>
+          {leadUnlocked ? (
+            <div className="setup-command">
+              <code>{skillInstallCommand}</code>
+              <div className="setup-actions">
+                <button className="primary wide" onClick={copyCommand}>
+                  {copied ? "Copied" : "Copy command"}
+                </button>
+                <a href={skillRepoUrl}>Star the repo</a>
+              </div>
+              <p className="form-note">
+                Star AI Leaderboard Radar to save it and support the project.
+              </p>
+            </div>
+          ) : (
+            <form className="unlock-form" onSubmit={submitLead}>
+              <label>
+                Name
+                <input name="name" autoComplete="name" required />
+              </label>
+              <label>
+                Email
+                <input name="email" type="email" autoComplete="email" required />
+              </label>
+              <input name="website" className="honeypot" tabIndex={-1} autoComplete="off" />
+              <button className="primary wide" disabled={leadStatus === "submitting"} type="submit">
+                {leadStatus === "submitting" ? "Unlocking..." : "Unlock install command"}
+              </button>
+              <p className="form-note">Unlocks the skill command and occasional updates. No spam.</p>
+              {leadStatus === "error" ? <p className="form-note error">{leadError}</p> : null}
+            </form>
+          )}
         </article>
       </section>
 

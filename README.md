@@ -7,6 +7,8 @@ with unusually high revenue per employee. It follows the Books Radar / Loops
 Radar model: generated public data, weekly markdown feeds, source receipts, and
 an installable agent skill.
 
+Live site: https://aileaderboardradar.snackoverflowgeorge.com
+
 ## What You Get
 
 - Searchable leaderboard of lean AI-native companies.
@@ -139,6 +141,28 @@ npm run test:ui
 `npm run test:ui` runs the Playwright suite against a production `next start`
 server. It covers search/filtering, detail pages, copy-to-clipboard, mocked
 issue submission, setup command copying, and mobile overflow.
+
+## Website Lead Capture
+
+The homepage install card asks for name and email before revealing the copyable
+install command. Submissions are saved server-side into a shared Supabase table
+called `radar_leads`; no Supabase key is exposed to the browser.
+
+Create or update the table with:
+
+```sh
+psql "$SUPABASE_DB_URL" -f docs/radar-leads-supabase.sql
+```
+
+Required deployment environment variables:
+
+```env
+SUPABASE_URL=https://<project-ref>.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=<server-side-service-role-key>
+```
+
+`radar_leads` upserts by `(product, email)`, so repeated unlocks update the
+existing lead instead of creating duplicates.
 
 ## Request Intake
 
