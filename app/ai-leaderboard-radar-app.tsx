@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import type { AiCompany } from "@/lib/companies";
 import { formatCompactCurrency, locations, qualificationModes, sourceTypes, totals } from "@/lib/companies";
 
@@ -390,9 +391,9 @@ export function AiLeaderboardRadarApp({ companies }: Props) {
                 <tr key={company.id}>
                   <td className="rank">{rankLabel(company.rank)}</td>
                   <td className="company-cell">
-                    <a href={company.website || company.source || "#"} target="_blank" rel="noreferrer">
+                    <Link href={`/companies/${company.id}`}>
                       {company.company}
-                    </a>
+                    </Link>
                     <span>{company.description || "AI-native company"}</span>
                   </td>
                   <td className="money strong">{company.revenuePerEmployee.display}</td>
@@ -408,7 +409,13 @@ export function AiLeaderboardRadarApp({ companies }: Props) {
                     )}
                   </td>
                   <td>
-                    <span className={`source-pill ${company.sourceType}`}>{company.sourceLabel}</span>
+                    {company.source ? (
+                      <a className={`source-pill ${company.sourceType}`} href={company.source} target="_blank" rel="noreferrer">
+                        {company.sourceLabel}
+                      </a>
+                    ) : (
+                      <span className={`source-pill ${company.sourceType}`}>{company.sourceLabel}</span>
+                    )}
                   </td>
                   <td>{company.lastUpdated || "Unknown"}</td>
                 </tr>

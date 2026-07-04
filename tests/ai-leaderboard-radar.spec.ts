@@ -4,7 +4,7 @@ import { companies } from "../lib/companies";
 const medvi = companies.find((company) => company.id === "medvi") || companies[0];
 
 test.describe("AI Leaderboard Radar catalog", () => {
-  test("skill setup is first-screen and catalog links open company websites", async ({ page }) => {
+  test("skill setup is first-screen and catalog links open company detail pages", async ({ page }) => {
     await page.goto("/");
 
     await expect(page).toHaveTitle("AI Leaderboard Radar");
@@ -17,8 +17,11 @@ test.describe("AI Leaderboard Radar catalog", () => {
     await page.getByPlaceholder("Company, market, source...").fill(medvi.company);
     await expect(page.getByText("1 matching companies")).toBeVisible();
     const companyLink = page.getByRole("link", { name: medvi.company });
-    await expect(companyLink).toHaveAttribute("href", medvi.website);
-    await expect(companyLink).toHaveAttribute("target", "_blank");
+    await expect(companyLink).toHaveAttribute("href", `/companies/${medvi.id}`);
+    await companyLink.click();
+    await expect(page).toHaveURL(new RegExp(`/companies/${medvi.id}$`));
+    await expect(page.getByRole("heading", { name: medvi.company, level: 1 })).toBeVisible();
+    await expect(page.getByRole("link", { name: "Company website" })).toHaveAttribute("href", medvi.website);
   });
 
   test("filters and sort modes update the leaderboard", async ({ page }) => {
@@ -99,5 +102,20 @@ test.describe("AI Leaderboard Radar catalog", () => {
     }));
 
     expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth);
+  });
+
+  test("weekly feed page renders copyable markdown and receipts", async ({ page }) => {
+    await page.goto("/feeds/2026-06-27");
+
+    await expect(page).toHaveTitle("2026-06-27 | AI Leaderboard Radar");
+    await expect(
+      page.getByRole("heading", {
+        name: "AI Leaderboard Radar Weekly Feed - 2026-06-27",
+        level: 1,
+      }),
+    ).toBeVisible();
+    await expect(page.getByText("Copyable Feed Markdown")).toBeVisible();
+    await expect(page.locator(".markdown-recipe code")).toContainText("## Featured Companies");
+    await expect(page.locator(".markdown-panel").getByText("Source Receipts", { exact: true })).toBeVisible();
   });
 });

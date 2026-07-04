@@ -9,6 +9,8 @@ an installable agent skill.
 
 Live site: https://aileaderboardradar.snackoverflowgeorge.com
 
+Design contract: [DESIGN.md](DESIGN.md)
+
 ## What You Get
 
 - Searchable leaderboard of lean AI-native companies.

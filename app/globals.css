@@ -594,6 +594,18 @@ tbody tr:hover {
   white-space: pre;
 }
 
+.receipt-list {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.receipt-list a {
+  overflow-wrap: anywhere;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+
 @media (max-width: 920px) {
   .topbar,
   .dashboard-band,

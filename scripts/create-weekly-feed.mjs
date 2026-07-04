@@ -101,7 +101,7 @@ Updated after the AI Leaderboard Radar source sync.
 
 ${featured
   .map(
-    (company) => `- [${company.company}](${company.website || company.source || "https://aileaderboardradar.snackoverflowgeorge.com"})
+    (company) => `- [${company.company}](https://aileaderboardradar.snackoverflowgeorge.com/companies/${company.id})
   - Rank: ${company.rank >= 9999 ? "Watchlist" : `#${company.rank}`}
   - Description: ${company.description || "Unknown"}
   - Revenue per employee: ${company.revenuePerEmployee.display}
@@ -116,7 +116,7 @@ ${featured
 ${rotation
   .map(
     (entry) =>
-      `- ${entry.day}: [${entry.company.company}](${entry.company.website || entry.company.source || "https://aileaderboardradar.snackoverflowgeorge.com"}) - ${entry.company.revenuePerEmployee.display} revenue/employee`,
+      `- ${entry.day}: [${entry.company.company}](https://aileaderboardradar.snackoverflowgeorge.com/companies/${entry.company.id}) - ${entry.company.revenuePerEmployee.display} revenue/employee`,
   )
   .join("\n")}
 

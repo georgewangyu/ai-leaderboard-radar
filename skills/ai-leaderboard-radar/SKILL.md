@@ -1,6 +1,14 @@
 ---
 name: ai-leaderboard-radar
 description: Use when selecting, studying, recommending, syncing, or digesting lean AI-native company leaderboard entries from AI Leaderboard Radar, including daily or weekly company-to-study digests and source-backed revenue-per-employee analysis.
+memory_tags:
+  - domain:ai-companies
+  - workflow:leaderboard-digest
+  - skill_role:researcher
+  - repo_boundary:tools
+  - inputs:company-catalog
+  - outputs:company-digest
+  - risk:medium
 ---
 
 # AI Leaderboard Radar
