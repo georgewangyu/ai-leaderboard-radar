@@ -78,16 +78,10 @@ a {
 }
 
 .mark {
-  display: grid;
+  display: block;
   width: 34px;
   height: 34px;
   flex: 0 0 auto;
-  place-items: center;
-  border-radius: 8px;
-  background: var(--ink);
-  color: white;
-  font-family: var(--mono);
-  font-size: 12px;
 }
 
 .nav-pills {

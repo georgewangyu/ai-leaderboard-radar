@@ -2,6 +2,7 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import { BrandMark } from "./brand-mark";
 import type { AiCompany } from "@/lib/companies";
 import { formatCompactCurrency, locations, qualificationModes, sourceTypes, totals } from "@/lib/companies";
 
@@ -227,7 +228,7 @@ export function AiLeaderboardRadarApp({ companies }: Props) {
     <main className="shell">
       <header className="topbar">
         <a className="brand" href="/">
-          <span className="mark">AI</span>
+          <BrandMark />
           <span>AI Leaderboard Radar</span>
         </a>
         <nav className="nav-pills" aria-label="Main navigation">
