@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { findCompany, formatCompactCurrency, companies } from "@/lib/companies";
+import { findCompany, formatCompactCurrency, companies, sourceTypeLabel } from "@/lib/companies";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -8,13 +8,6 @@ type Props = {
 
 function rankLabel(rank: number) {
   return rank >= 9999 ? "Watchlist" : `#${rank}`;
-}
-
-function sourceTypeLabel(value: string) {
-  return value
-    .split("-")
-    .map((part) => part[0].toUpperCase() + part.slice(1))
-    .join(" ");
 }
 
 function companyMarkdown(company: NonNullable<ReturnType<typeof findCompany>>) {

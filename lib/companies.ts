@@ -86,3 +86,10 @@ export function formatCompactCurrency(value: number | null) {
 export function findCompany(id: string) {
   return companies.find((company) => company.id === id);
 }
+
+export function sourceTypeLabel(value: string) {
+  return value
+    .split("-")
+    .map((part) => part[0].toUpperCase() + part.slice(1))
+    .join(" ");
+}

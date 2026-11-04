@@ -4,7 +4,7 @@ import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { BrandMark } from "./brand-mark";
 import type { AiCompany } from "@/lib/companies";
-import { formatCompactCurrency, locations, qualificationModes, sourceTypes, totals } from "@/lib/companies";
+import { formatCompactCurrency, locations, qualificationModes, sourceTypeLabel, sourceTypes, totals } from "@/lib/companies";
 
 type Props = {
   companies: AiCompany[];
@@ -60,45 +60,41 @@ function sortCompanies(items: AiCompany[], sortMode: SortMode) {
   });
 }
 
-function sourceTypeLabel(value: string) {
-  return value
-    .split("-")
-    .map((part) => part[0].toUpperCase() + part.slice(1))
-    .join(" ");
-}
-
 function rankLabel(rank: number) {
   return rank >= 9999 ? "Watch" : `#${rank}`;
 }
 
-async function errorMessageFor(response: Response) {
+type ErrorCopy = {
+  labels: Record<string, string>;
+  unavailable: string;
+  invalid: string;
+};
+
+const submitErrorCopy: ErrorCopy = {
+  labels: {},
+  unavailable: "Something went wrong. Try again or send the tip another way.",
+  invalid: "Check the form and try again.",
+};
+
+const leadErrorCopy: ErrorCopy = {
+  labels: leadLabels,
+  unavailable: "Could not unlock the install command. Try again in a moment.",
+  invalid: "Check your email and try again.",
+};
+
+async function errorMessageFor(response: Response, copy: ErrorCopy) {
   if (response.status !== 400) {
-    return "Something went wrong. Try again or send the tip another way.";
+    return copy.unavailable;
   }
 
   const body = (await response.json().catch(() => null)) as
     | { error?: string; issues?: Record<string, string[] | undefined> }
     | null;
   const fieldMessages = Object.entries(body?.issues || {}).flatMap(([field, messages]) =>
-    (messages || []).map((message) => `${field}: ${message}`),
+    (messages || []).map((message) => `${copy.labels[field] || field}: ${message}`),
   );
 
-  return fieldMessages.length ? fieldMessages.join(" ") : body?.error || "Check the form and try again.";
-}
-
-async function leadErrorMessageFor(response: Response) {
-  if (response.status !== 400) {
-    return "Could not unlock the install command. Try again in a moment.";
-  }
-
-  const body = (await response.json().catch(() => null)) as
-    | { error?: string; issues?: Record<string, string[] | undefined> }
-    | null;
-  const fieldMessages = Object.entries(body?.issues || {}).flatMap(([field, messages]) =>
-    (messages || []).map((message) => `${leadLabels[field] || field}: ${message}`),
-  );
-
-  return fieldMessages.length ? fieldMessages.join(" ") : body?.error || "Check your email and try again.";
+  return fieldMessages.length ? fieldMessages.join(" ") : body?.error || copy.invalid;
 }
 
 export function AiLeaderboardRadarApp({ companies }: Props) {
@@ -185,7 +181,7 @@ export function AiLeaderboardRadarApp({ companies }: Props) {
 
       if (!response.ok) {
         setLeadStatus("error");
-        setLeadError(await leadErrorMessageFor(response));
+        setLeadError(await errorMessageFor(response, leadErrorCopy));
         return;
       }
 
@@ -195,7 +191,7 @@ export function AiLeaderboardRadarApp({ companies }: Props) {
       form.reset();
     } catch {
       setLeadStatus("error");
-      setLeadError("Could not unlock the install command. Try again in a moment.");
+      setLeadError(leadErrorCopy.unavailable);
     }
   }
 
@@ -216,7 +212,7 @@ export function AiLeaderboardRadarApp({ companies }: Props) {
 
     if (!response.ok) {
       setFormStatus("error");
-      setError(await errorMessageFor(response));
+      setError(await errorMessageFor(response, submitErrorCopy));
       return;
     }
 
