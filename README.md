@@ -135,10 +135,13 @@ Open `http://localhost:4194`.
 npm run sync:leaderboard
 npm run feed:weekly
 npm run --silent feed:latest
-npm run typecheck
+npm run check   # typecheck and lint
 npm run build
 npm run test:ui
 ```
+
+CI (`.github/workflows/ci.yml`) runs `npm run check` and `npm run build` on
+every push to `main` and on pull requests.
 
 `npm run test:ui` runs the Playwright suite against a production `next start`
 server. It covers search/filtering, detail pages, copy-to-clipboard, mocked

@@ -13,7 +13,9 @@
     "sync:george-ai-leaderboard": "node scripts/sync-leaderboard.mjs",
     "validate:leaderboard": "node scripts/sync-leaderboard.mjs --check",
     "typecheck": "tsc --noEmit",
-    "test:ui": "playwright test"
+    "test:ui": "playwright test",
+    "lint": "eslint .",
+    "check": "npm run typecheck && npm run lint"
   },
   "dependencies": {
     "next": "^15.5.29",
@@ -22,11 +24,15 @@
     "zod": "^3.25.67"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.7",
     "@playwright/test": "^1.61.0",
     "@types/node": "^22.15.34",
     "@types/react": "^19.0.14",
     "@types/react-dom": "^19.0.6",
-    "typescript": "^5.8.3"
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.5.29",
+    "typescript": "^5.8.3",
+    "vitest": "^4.1.12"
   },
   "overrides": {
     "postcss": "^8.5.10"

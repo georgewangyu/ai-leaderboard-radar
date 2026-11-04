@@ -227,10 +227,10 @@ export function AiLeaderboardRadarApp({ companies }: Props) {
   return (
     <main className="shell">
       <header className="topbar">
-        <a className="brand" href="/">
+        <Link className="brand" href="/">
           <BrandMark />
           <span>AI Leaderboard Radar</span>
-        </a>
+        </Link>
         <nav className="nav-pills" aria-label="Main navigation">
           <a href="#leaderboard">Leaderboard</a>
           <a href="#sources">Sources</a>
