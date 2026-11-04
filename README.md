@@ -135,7 +135,7 @@ Open `http://localhost:4194`.
 npm run sync:leaderboard
 npm run feed:weekly
 npm run --silent feed:latest
-npm run check   # typecheck and lint
+npm run check   # typecheck, lint and unit tests
 npm run build
 npm run test:ui
 ```
