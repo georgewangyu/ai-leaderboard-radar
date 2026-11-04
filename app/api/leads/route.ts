@@ -20,10 +20,6 @@ export async function POST(request: Request) {
     );
   }
 
-  if (parsed.data.website) {
-    return NextResponse.json({ ok: true });
-  }
-
   try {
     await saveRadarLead({
       ...parsed.data,
